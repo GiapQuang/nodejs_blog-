@@ -1,0 +1,16 @@
+<button id="backButton">&larr; Quay lại</button>
+<div class="main-title">
+  <h2>Thêm Blog Mới</h2>
+</div>
+
+<form action="/add-post" method="POST">
+
+  <label for="title"><b>Tiêu đề</b></label>
+  <input type="text" name="title">
+
+  <label for="body"><b>Nội Dung</b></label>
+  <textarea name="body" cols="50" rows="10"></textarea>
+
+  <input type="submit" value="Thêm" class="btn" onclick="history.back()">
+
+</form>

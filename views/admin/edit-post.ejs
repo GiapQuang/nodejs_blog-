@@ -1,0 +1,16 @@
+<button id="backButton" onclick="history.back()">&larr; Quay lại</button>
+<div class="admin-title">
+  <h2>Chỉnh sửa</h2>
+</div>
+
+<form action="/edit-post/<%= data._id %>?_method=PUT" method="POST">
+
+  <label for="title"><b>Tiêu đề</b></label>
+  <input type="text" placeholder="Post Title" name="title" value="<%= data.title %>">
+
+  <label for="body"><b>Nội dung</b></label>
+  <textarea name="body" cols="50" rows="10"><%= data.body %></textarea>
+
+  <input type="submit" value="Chỉnh sửa" class="btn" >
+
+</form>
